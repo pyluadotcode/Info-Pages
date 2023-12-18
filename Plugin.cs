@@ -9,7 +9,6 @@ using UnityEngine;
 public class FrameChecker : BaseUnityPlugin 
 {
     private static int FrameRate;
-    private static int FPS;
     public static int fps
     {
         get { return FrameRate; }
