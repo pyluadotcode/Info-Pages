@@ -1,0 +1,16 @@
+
+*.v2
+*.vsidx
+.vs/StatusScreen/v17/.suo
+*.dll
+*.xml
+*.json
+*.pdb
+*.cs
+*.cache
+*.props
+*.targets
+*.CopyComplete
+obj/Debug/netstandard2.1/StatusScreen.csproj.FileListAbsolute.txt
+obj/Debug/netstandard2.1/StatusScreen.csproj.FileListAbsolute.txt
+*.editorconfig
