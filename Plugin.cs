@@ -45,14 +45,14 @@ public class Status : IScreen
             string roomplay = "Player Count: " + PhotonNetwork.CurrentRoom.PlayerCount + "\n";
             string gmod = "Game Mode: " + GorillaComputer.instance.currentGameMode + "\n";
             string master = "Master Client: " + PhotonNetwork.MasterClient + "\n";
-            string color = "Color Code: " + GorillaTagger.Instance.offlineVRRig.playerColor + "\n";
+            string color = "Color Code: " + (Color32)GorillaTagger.Instance.offlineVRRig.playerColor + "\n";
             string fps = "FPS: " + FrameChecker.fps + "\n";
             if (gmod == "Game Mode: MODDED_MODDED_CASUALCASUAL\n")
                 gmod = "Game Mode: Modded_Casual\n";
             Result = name + room + roomplay + gmod + master;
         }
         else
-            Result = ("Name: " + GorillaComputer.instance.currentName + "\n" + "Color Code: " + GorillaTagger.Instance.offlineVRRig.playerColor + "\n" + "FPS: " + FrameChecker.fps);
+            Result = ("Name: " + GorillaComputer.instance.currentName + "\n" + "Color Code: " + (Color32)GorillaTagger.Instance.offlineVRRig.playerColor + "\n" + "FPS: " + FrameChecker.fps);
         return (Result);
     }
 
