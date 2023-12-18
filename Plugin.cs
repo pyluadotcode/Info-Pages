@@ -53,7 +53,7 @@ public class Status : IScreen
             Result = name + room + roomplay + gmod + master;
         }
         else
-            Result = ("Name: " + GorillaComputer.instance.currentName);
+            Result = ("Name: " + GorillaComputer.instance.currentName + "\n" + "Color Code: " + GorillaTagger.Instance.offlineVRRig.playerColor + "\n" + "FPS: " + FrameChecker.fps);
         return (Result);
     }
 
